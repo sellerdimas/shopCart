@@ -20,11 +20,11 @@ if(Meteor.isServer){
 		Stripe = StripeAPI(Meteor.settings.stripe_sk);
 		wrappedStripeChargeCreate = Meteor.wrapAsync(Stripe.charges.create, Stripe.charges);
 	}else{
-		
+		console.log('ERROR - stripe secret key not found in settings');
 	}
 }else{
 	if(!Meteor.settings || !Meteor.settings.public || !Meteor.settings.public.stripe_pk)
-		
+		console.log('ERROR - stripe public key not found in settings');
 }
 
 /*Meteor.methods({
