@@ -44,7 +44,8 @@ Tracker.autorun(function(){
 		query.deviceId = Session.get('Cart-deviceId');
 	
 	var total = 0;
-	var items = Cart.Items.find(/*query, {fields: {price: 1}}*/{});
+	var items = Cart.Items.find(query, {fields: {}});
+	console.log(items);
 	var counter = 0;
 	items.forEach(function(item){
 		var quantity = +item.itemCount;
