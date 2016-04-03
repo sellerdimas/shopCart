@@ -1,0 +1,78 @@
+<template name="tovar">
+    <div class="tovar">
+        <div class="row">
+
+
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+            <div class="col s10 offset-s1">
+                <h3 class="center-align headerBlue">Модные купальники</h3>
+               <h5 class="subHeaderBlack center-align">Наши купальники улучшат вашу внешность</h5> 
+                {{#each tovarNewCollections}}
+                <div class="col s4 m3 tovarBlock modal1" id="tovar" name="{{_id}}" >
+                    {{#if sale}}
+                    <div class="sale">SALE</div>
+                    {{/if}}
+                {{#if news}}
+                    <div class="new">NEW</div>
+                    {{/if}}
+                    <div class="servicesBlockImg">
+                        <img src="{{imgSrc}}" name="{{hover}}" names="{{imgSrc}}" class="responsive-img" alt=""></div>
+
+                    <div class="">
+                        
+                    
+                         {{#if tovarSquereColor}}
+                            <div class="colorSquare" style="background:{{tovarSquereColor}};" name="{{hoverColor}}">
+                                <img src="{{hoverColor}}" class="responsive-img" alt="">
+                            </div>
+                         {{/if}}
+                         {{#if tovarSquereColor2}}
+                            <div class="colorSquare" style="background:{{tovarSquereColor2}};" name="{{hoverColor2}}">
+                                <img src="{{hoverColor2}}" class="responsive-img" alt="">
+                            </div>
+                          {{/if}}
+                         {{#if tovarSquereColor3}}
+                         <div class="colorSquare" style="background:{{tovarSquereColor3}};" name="{{hoverColor3}}">
+                            <img src="{{hoverColor3}}" class="responsive-img" alt="">
+                            </div>{{/if}}
+                         {{#if tovarSquereColor4}}<div class="colorSquare" style="background:{{tovarSquereColor4}};" name="{{hoverColor4}}">
+                             <img src="{{hoverColor4}}" class="responsive-img" alt="">
+                         </div>{{/if}}
+                         {{#if tovarSquereColor5}}
+                         <div class="colorSquare" style="background:{{tovarSquereColor5}};" name="{{hoverColor5}}"
+                         ><img src="{{hoverColor5}}" class="responsive-img" alt=""></div>{{/if}}
+                         {{#if tovarSquereColor6}}<div class="colorSquare" style="background:{{tovarSquereColor6}};" name="{{hoverColor6}}">
+                             <img src="{{hoverColor6}}" class="responsive-img" alt="">
+                         </div>{{/if}}
+                         {{#if tovarSquereColor7}}<div class="colorSquare" style="background:{{tovarSquereColor7}};" name="{{hoverColor7}}">
+                             <img src="{{hoverColor7}}" class="responsive-img" alt="">
+                         </div>{{/if}}
+                         {{#if tovarSquereColor8}}<div class="colorSquare" style="background:{{tovarSquereColor8}};" name="{{hoverColor8}}"><img src="{{hoverColor8}}" class="responsive-img" alt=""></div>{{/if}}
+                         {{#if tovarSquereColor9}}<div class="colorSquare" style="background:{{tovarSquereColor9}};" name="{{hoverColor9}}"><img src="{{hoverColor9}}" class="responsive-img" alt=""></div>{{/if}}
+                         {{#if tovarSquereColor10}}<div class="colorSquare" style="background:{{tovarSquereColor10}};" name="{{hoverColor10}}">
+                             <img src="{{hoverColor10}}" class="responsive-img responsive-img" alt="">
+                         </div>{{/if}}
+                         <img class="hoverImg" src="{{hover}}" alt="">
+                        <div class="tovarHeader">{{tovarHeader}}</div>
+                        <div class="firma">{{firma}}</div>
+                        <div class="price">
+                            <span class="akcia">{{akcii}} грн.</span>
+                            <span>{{price}} грн.</span>
+                            <span class="buyTovar">купить</span>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>
