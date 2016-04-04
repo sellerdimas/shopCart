@@ -39,6 +39,19 @@ Template.razdelnyy.events({
          
     }
 });
+Template.razdelnyy.events({
+    'click .add-item': function (e, tmpl) {
+
+                var color = $('.colorPhoto .colorActive').attr('src');
+   
+            if(color){ 
+             $('#modal4').openModal();
+            }else{
+                alert('Вы не выбрали цвет');
+        }
+         
+    }
+});
 Template.razdelnyy.onRendered(function () {
   $( '.socSet img' ).hover(
         function() {

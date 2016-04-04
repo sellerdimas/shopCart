@@ -47,5 +47,16 @@ Template.modal2.events({
         }
     }
 });
+Template.modal4.helpers({
+    'itemCount':function(){
+        return Session.get('Cart-itemCount');
+    },
+    'itemTotal':function(){
+        return Session.get('Cart-itemTotal');
+    },
+    'itemsInCart':function(){
+        return !Session.equals('Cart-itemCount', 0);
+    }
+});
 
 

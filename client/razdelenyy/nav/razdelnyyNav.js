@@ -6,10 +6,21 @@ Template.rezdelnyyNav.events({
 });
 
 Template.rezdelnyyNav.events({
-    'click #navButton':function(e, tmpl) {
-    	$('#modal2').openModal();
+    'click .blockCart':function(e, tmpl) {
+    	Router.go('cart');
         
 
 
     }
+});
+Template.rezdelnyyNav.helpers({
+	'itemCount':function(){
+		return Session.get('Cart-itemCount');
+	},
+	'itemTotal':function(){
+		return Session.get('Cart-itemTotal');
+	},
+	'itemsInCart':function(){
+		return !Session.equals('Cart-itemCount', 0);
+	}
 });

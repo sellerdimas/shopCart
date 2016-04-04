@@ -59,11 +59,12 @@
 
 {{>modal2}}
 {{>modal3}}
+{{>modal4}}
 <div class="row">
 
 
  <div class="col s10 offset-s1">
- {{> CartSummary}}
+
 
      <div class="socSet">
         <div class="soc">
@@ -162,8 +163,9 @@
                     </div>
                 </div>
 
+
                 <div class="col s12">
-                    <div class="sizeColor">
+                    <div class="sizeColor col s12">
                         <p>Выберите размер (Size), а затем цвет (Color)</p>
                     </div>
 
@@ -274,7 +276,7 @@
                                                         </div>
                                                         <div class="col s12">
                                                          <div class="col s2">
-                                                            <div class="charColor">Кол.:</div>
+                                                            <div class="charColor">Кол-во:</div>
 
                                                         </div>
                                                         <div class="col s2">
@@ -336,13 +338,13 @@
 
 
         </div>
-        {{#if tableSize}}
-        <p id="tableSize" name="{{tableSize}}">Таблица размеров</p>
-        {{/if}}
+      <!--   {{#if tableSize}}
+      <p id="tableSize" name="{{tableSize}}">Таблица размеров</p>
+      {{/if}} -->
     </section>
 </div>
 
-<div class="input-field col s12">
+<!-- <div class="input-field col s12">
     <input id="name" type="text" class="validate">
     <label for="name">Ваше имя</label>
 </div>
@@ -350,19 +352,26 @@
     <input id="namber" type="text" class="validate">
     <label for="namber">Ваш номер</label>
 </div>
+ -->
+ <div class="col s12">
 
-<div class="col s12">
-    <div class="col s6">
-        <div class="modalButt">
-            <span class="send">Оставить заявку</span>
-            {{>CartAddItemButton}}
+        <div class="modalButt center-align">
+            <span class="">Оставить заявку</span>
+            
         </div>
-
-    </div>
+    {{>CartAddItemButton}}
+ </div>
+<div class="col s12">
+   
+   
     <div class="razdelnyyMenejer col s6">
         <p>-Менеджер перезвонит вам в течении 2 часов</p>
     </div>
-
+ 
+<div class="col s12">
+     {{#if tableSize}}
+      <p id="tableSize" name="{{tableSize}}">Таблица размеров</p>
+      {{/if}}
 </div>
 <div class="deliveryTovar col s12" id="deliveryTovar">
     <p class=""><span class="charColor col s3">Доставка товара:</span> <span class="col s9 textDelivery"><img src="/tovarDelivery.png" width="20" alt="">Бесплатная доставка по Киеву и Украине 1-2 дня.Отправка через несколько часов после подтверждения заказа</span></p>
@@ -372,6 +381,8 @@
  <p><span class="charColor col s3"> Возврат товара:</span> <span class="col s9 textDelivery"><img src="/vozvratTovara.png" width="20" alt="">Вы можете вернуть товар, оплатив стоимость обратной пересылки.7 дней на возврат или обмен товара без лишних вопросов и проблем.</span></p>
 
 </div>
+</div>
+
 
 
 

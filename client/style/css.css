@@ -1,20 +1,9 @@
 /* =============================fonts============================== */
 
-@font-face {
-font-family: blisspro-light;
-src: local("blisspro-light"), url("fonts/blisspro-light.otf");
-}
+
 @font-face {
 font-family: ClinicaPro-Regular;
 src: local("ClinicaPro-Regular"), url("fonts/ClinicaPro-Regular.otf");
-}
-@font-face {
-font-family: FiraSansOT-Regular;
-src: local("FiraSansOT-Regular"), url("fonts/FiraSansOT-Regular.otf");
-}
-@font-face {
-font-family: FiraSansOT-Light;
-src: local("FiraSansOT-Light"), url("fonts/FiraSansOT-Light.otf");
 }
 @font-face {
 font-family: OpenSansRegular;
@@ -54,12 +43,12 @@ src: local("OpenSansBold"), url("fonts/OpenSansBold.ttf");
 }
 .headerBlue{
     color: #E94660;
-    font-family: blisspro-light;
+    font-family: OpenSansRegular;
     margin: 2.5rem 0px 1rem 0;
     font-size: 3.125rem;
 }
 .subHeaderBlack{
-    font-family: OpenSansRegular;
+    font-family: ClinicaPro-Regular;
     color: #414141;      
     font-size: 1.5rem;
     margin: 0 0 2rem 0;
@@ -150,7 +139,7 @@ nav ul a:hover {
 }
 .countCart{
     position: fixed;
-    background: #fb3b4c;
+    background: #EC407A;
     top: 7px;
     font-size: 18px;
     width: 27px;
@@ -325,7 +314,7 @@ animation-duration:2s;
 .razdelnyyCena{
   margin: 0;
   font-size: 22px;
-  color: #F60;
+  color: #F50057;
   font-family: OpenSansBold;
 }
 .sizeColor p{
@@ -402,13 +391,13 @@ margin: 15px 0 0 0;
   border-bottom: 1px #f5f5f5;
 } */
 .colorActive{
-  outline: 3px solid #F60;
+  outline: 3px solid #F50057;
 }
 .presentGlasses{
   background: #f5f5f5;
 }
 .razdelnyyColorActive{
-  outline: 3px solid #F60;
+  outline: 3px solid #F50057;
 }
 .ulColor{
   margin: 0;
@@ -770,21 +759,40 @@ select {
 
 }
 .modalButt{
-  width: 222px;
-  height: 40px;
-  padding: 8px 10px 10px 10px;
-  border-radius: 5px;
-  background: #F60;
-  font-weight: 600;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 18px;
-  margin-top: 15px;
+    width: 222px;
+    padding: 6px 0;
+    background: #EC407A;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: OpenSansBold;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    display: inline-block;
+    margin-right: 20px;
+}
+.buttonCart{
+    width: 222px;
+    padding: 6px 0;
+    background: #EC407A;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 10px;
+        font-family: OpenSansBold;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+        display: inline-block;
 }
 
 .modalButt:hover{
-  background: #E1223C;
+  background: #E91E63;
 }
+.buttonCart:hover{
+  background: #D81B60;
+}
+
 .modalPhoto{
   height: 84px;
   margin-top: 10px;
@@ -801,7 +809,7 @@ select {
 }
 #tableSize{
     font-size: 20px;
-    color: #F60;
+    color: #F50057;
     cursor: pointer;
     text-decoration: underline;
 margin: 0;
@@ -832,6 +840,9 @@ footer.page-footer {
   }
   .send{
     margin-left: 30px;
+  }
+  .vkFooter{
+    margin: 0 5px 3px 0;
   }
 /*=============================preLoader============================== */
 /* .loading-message {
