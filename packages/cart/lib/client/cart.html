@@ -38,13 +38,14 @@
 
 <template name="CartItem">
 	<div>
-	<img src="{{imgSrc}}" width="100" alt="">
-		{{name}} - {{price}} {{itemCount}}
+	<img src="{{colorPhoto}}" width="100" alt="">
+	<a href="http://localhost:3000/razdelnyy/{{productId}}">{{tovarHeader}} {{byst}} {{trysu}}</a>
+		  {{price}} 
 		<br>
 		<div class="row">
 				<div class="input-field col s6">
 								<input type="text" class="validate quantity">
-								<label for="number2 " class="number2">Номер</label>
+								<label for="number2 " class="number2">{{itemCount}}</label>
 							</div>
 		</div>
 	

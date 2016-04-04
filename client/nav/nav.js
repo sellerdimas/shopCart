@@ -22,11 +22,38 @@ Template.nav.events({
 });
 
 
+
+Template.nav.helpers({
+	'itemCount':function(){
+		return Session.get('Cart-itemCount');
+	},
+	'itemTotal':function(){
+		return Session.get('Cart-itemTotal');
+	},
+	'itemsInCart':function(){
+		return !Session.equals('Cart-itemCount', 0);
+	}
+});
+
 Template.nav.events({
-    'click #navButton':function(e, tmpl) {
-    	$('#modal2').openModal();
+    'click .cartImg':function(e, tmpl) {
+    	Router.go('cart');
         
 
 
     }
+});
+Template.nav.events({
+    'click .countCart':function(e, tmpl) {
+    	Router.go('cart');
+        
+
+
+    }
+});
+
+ Template.nav.onRendered(function () {
+
+ 	$('.tooltipped').tooltip({delay: 50});
+
 });

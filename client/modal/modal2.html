@@ -3,8 +3,12 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col s12">
+                {{#each items}}
+            {{>CartItem}}
+        {{/each}}
                 <img src="/closed1.png" class="close" alt="">
                     <h4 class="center-align">Заказать звонок</h4>
+
                     <h5 class="center-align">
                         Оставьте заявку, и наш менеджер перезвонит
                     вам и ответит на все ваши вопросы

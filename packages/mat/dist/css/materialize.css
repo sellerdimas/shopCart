@@ -5291,7 +5291,7 @@ nav .brand-logo {
 /*   padding: 8px 0 0 0; */
 
   white-space: nowrap; }
-nav .brand-logo.center {
+/* nav .brand-logo.center {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -5321,12 +5321,28 @@ nav .brand-logo.center {
     left: auto; } }
 nav .brand-logo.right {
   right: 0.5rem;
-  padding: 0; }
+  padding: 0; } */
+  @media only screen and (max-width : 752px) {
+  nav .brand-logo {
+    visibility: hidden; }
+
+  nav .brand-logo.left, nav .brand-logo.right {
+    padding: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+  nav .brand-logo.left {
+    left: 0.5rem; }
+  nav .brand-logo.right {
+    right: 0.5rem;
+    left: auto; } }
 nav ul {
   font-family: OpenSansBold;
 
   margin: 0;
-  margin-right: 25px;
+  margin-right: 85px;
 }
 nav ul li {
   -webkit-transition: background-color .3s;

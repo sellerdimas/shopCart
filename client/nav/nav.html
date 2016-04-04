@@ -1,5 +1,16 @@
 <template name="nav">
     <div class="navbar-fixed">
+    <div class="blockCart" >
+                            <img src="cart.png" class="cartImg " width="50"  alt="">
+                            <div class="countCart circle center-align">
+        
+            {{itemCount}}
+      
+       
+                        </div>
+                        </div>
+    
+  
         <nav id="nav-container">
             <div class="nav-wrapper row" id="nav">
 
@@ -7,7 +18,7 @@
             <div class="textLogo">Магазин купальников<!-- <span class="number hide-on-med-only">(097)-23-29-570</span> -->
                                       </div >
                 </a>
-                <ul class="right hide-on-med-and-down">
+                <ul class="right ">
                     <li>
                         <a href="tovar" class="navScroll">КОЛЛЕКЦИИ</a>
                     </li>
@@ -26,10 +37,13 @@
                   <img src="UA.png" alt="" class="ru">
               </li> -->
                     <li>
-                        <a class="waves-effect waves-light btn" id="navButton">Заказать звонок</a>
-
+                        <!-- <a class="waves-effect waves-light btn" id="navButton">Заказать звонок</a> -->
+                        
+                   
+                        
                     </li>
                 </ul>
+
             </div>
         </nav>
     </div>

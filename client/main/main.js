@@ -18,3 +18,11 @@ $('.slider-nav').slick({
 
 
 });
+Template.main.events({
+    'click .zakazZvonok':function(e, tmpl) {
+      $('#modal2').openModal();
+        
+
+
+    }
+});

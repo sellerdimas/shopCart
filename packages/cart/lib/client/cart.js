@@ -78,6 +78,7 @@ Template.CartAddItemButton.events({
 		item.byst = $('.selectSizeByst').val();
 		item.trysu = $('.selectSizeTrysu').val();
 		item.itemCount = $('.quantity').val();
+		item.colorPhoto = $('.colorPhoto .colorActive').attr('src');
 /*		item.name = $('#name').val();
 		item.number = $('#namber').val();*/
 
@@ -147,7 +148,6 @@ Template.CartPayNow.events({
 	    }
 	  });
 };*/
-
 
 Router.route('/cart', function () {
   this.render('CartItems', {
